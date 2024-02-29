@@ -2,7 +2,7 @@ import FieldTask from "./FieldTask";
 import SuperButton from "../SuperButton"; 
 
 
-export default function FormAdd({type,placeholder,buttonValue}){
+export default function FormAdd(){
   return(
 <form>
     <FieldTask type={type} placeholder={placeholder}/>

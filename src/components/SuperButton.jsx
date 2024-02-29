@@ -1,3 +1,6 @@
-export default function SupperButton({buttonValue}){
-  return <button>{buttonValue}</button>
+export default function SupperButton({buttonTitle}){
+  function handleClick(){
+    alert({buttonTitle})
+  }
+  return <button onclick={handleClick}>{buttonTitle}</button>
 }
