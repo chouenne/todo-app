@@ -27,8 +27,6 @@ function App() {
     });
   };
   
-
-  // Inside the App component
   const handleEditTask = (index, editedText) => {
     setTasks((prevTasks) => {
       const updatedTasks = [...prevTasks];
@@ -36,10 +34,9 @@ function App() {
       updatedTasks[index].editedText = ""; // Clear editedText
       return updatedTasks;
     });
-    exitEditMode(index); // Exit edit mode after updating the task
+    exitEditMode(index); 
   };
 
-  // Inside the TaskList component
   const handleEditedTextChange = (index, value) => {
     setTasks((prevTasks) => {
       const updatedTasks = [...prevTasks];
@@ -57,7 +54,6 @@ function App() {
     });
   };
 
-  // Inside the App component
   const exitEditMode = (index) => {
     setTasks((prevTasks) => {
       const updatedTasks = [...prevTasks];
