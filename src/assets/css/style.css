@@ -1,0 +1,96 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color: white;
+  font-size: 35px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.app{
+display: flex;
+justify-content: center;
+padding:80px;
+background-color: rgb(28, 40, 53);
+}
+
+.filterbar{
+  margin-bottom: 20px;
+ text-align: center;
+}
+
+.taskform{
+  margin-bottom: 20px;
+  color: white;
+}
+
+.taskform input{
+  padding: 6px 10px;
+  margin-left: 10px;
+  width: 208px;
+}
+
+.tasklist li{
+  background-color: rgba(127, 155, 255, 0.285);
+  margin-bottom: 10px;
+  border-radius: 25px;
+  padding: 10px 5px;
+  display: flex;
+  position: relative;
+  color:white;
+}
+
+.tasklist input{
+  margin-right: 10px;
+}
+
+.btngroup{
+  position: absolute;
+  right:0;
+  top:50%;
+  transform: translate(-10px, -50%);
+  
+}
+
+#addbtn{
+  background-color: rgb(255, 183, 0);
+  border: none;
+  padding:5px 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(28, 40, 53);
+}
+
+.editbtn{
+  background-color: rgb(9, 205, 169);
+  border: none;
+  padding:5px 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgb(28, 40, 53);
+}
+
+.deletebtn{
+  background-color: rgb(208, 53, 10);
+  border: none;
+  padding:5px 12px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgb(28, 40, 53);
+}
+
+
+
