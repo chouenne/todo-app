@@ -1,7 +1,7 @@
 export default function FilterBar({filter, setFilter}) {
   return (
     <div className="filterbar">
-      <label htmlFor="filter"></label>
+      <label htmlFor="filter">Filter your task here: </label>
       <select
         id="filter"
         value={filter}

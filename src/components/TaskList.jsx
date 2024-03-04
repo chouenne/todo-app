@@ -1,4 +1,3 @@
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 const TaskList = ({
   tasks,
   filter,
@@ -32,6 +31,7 @@ const TaskList = ({
                 console.log("Checkbox changed for task at index:", index);
                 handleToggleComplete(index);
               }}
+              className="checkbox"
             />
 
             {task.editMode ? (
@@ -42,12 +42,13 @@ const TaskList = ({
                   onChange={(e) =>
                     handleEditedTextChange(index, e.target.value)
                   }
+                  className="textInput"
                 />
               <div className="btngroup">
               <button className="updatebtn" onClick={() => handleEditTask(index, task.editedText)}>
-                  Update
+                  save
                 </button>
-                <button className="cancelbtn" onClick={() => exitEditMode(index)}>Cancel</button>
+                <button className="cancelbtn" onClick={() => exitEditMode(index)}>cancel</button>
               </div>
               </div>
 

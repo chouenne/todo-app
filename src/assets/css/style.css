@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: rgb(28, 40, 53);
+}
+
 h1{
   text-align: center;
   margin-bottom: 30px;
@@ -21,17 +25,19 @@ h1{
 display: flex;
 justify-content: center;
 padding:80px;
-background-color: rgb(28, 40, 53);
+
 }
 
 .filterbar{
   margin-bottom: 20px;
- text-align: center;
+ text-align: start;
+ color:white;
 }
 
 .taskform{
   margin-bottom: 20px;
   color: white;
+  display: flex;
 }
 
 .taskform input{
@@ -40,8 +46,12 @@ background-color: rgb(28, 40, 53);
   width: 208px;
 }
 
+.checkbox:checked{
+  background-color: rgb(218, 157, 2);
+}
+
 .tasklist li{
-  background-color: rgba(127, 155, 255, 0.285);
+  background-color: rgba(186, 189, 199, 0.524);
   margin-bottom: 10px;
   border-radius: 25px;
   padding: 10px 5px;
@@ -63,34 +73,90 @@ background-color: rgb(28, 40, 53);
 }
 
 #addbtn{
-  background-color: rgb(255, 183, 0);
+  background-color: rgb(218, 157, 2);
   border: none;
-  padding:5px 5px;
+  padding:0px 8px;
   margin-left: 20px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 30px;
   color: rgb(28, 40, 53);
+  cursor: 'pointer';
+  transition: .3s;
+}
+
+#addbtn:hover{
+  background-color:  rgb(254, 218, 128);
 }
 
 .editbtn{
   background-color: rgb(9, 205, 169);
   border: none;
   padding:5px 5px;
-  margin-left: 20px;
+  margin-left: 5px;
   border-radius: 5px;
   font-size: 15px;
   color: rgb(28, 40, 53);
+  cursor: 'pointer';
+  transition: .3s;
+}
+
+.editbtn:hover{
+  background-color: rgb(120, 255, 230);
 }
 
 .deletebtn{
   background-color: rgb(208, 53, 10);
   border: none;
   padding:5px 12px;
-  margin-left: 20px;
+  margin-left: 5px;
   border-radius: 5px;
   font-size: 15px;
   color: rgb(28, 40, 53);
+  cursor: 'pointer';
+  transition: .3s;
 }
+
+.deletebtn:hover{
+  background-color:rgb(251, 138, 107);
+}
+
+.updatebtn{
+  background-color:  rgb(208, 53, 10);
+  border: none;
+  padding:5px 12px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: rgb(28, 40, 53);
+  cursor: 'pointer';
+  transition: .3s;
+}
+
+.deletebtn:hover{
+  background-color:rgb(251, 138, 107);
+}
+
+
+.cancelbtn{
+  background-color: rgb(9, 205, 169);
+  border: none;
+  padding:5px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: rgb(28, 40, 53);
+  cursor: 'pointer';
+  transition: .3s;
+}
+
+.cancelbtn:hover{
+  background-color: rgb(120, 255, 230);
+}
+
+.textInput{
+  width: 85%;
+}
+
 
 
 
