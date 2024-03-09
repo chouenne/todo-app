@@ -1,0 +1,85 @@
+.tasklist {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.textInput {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+.btngroup {
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.updatebtn {
+  background-color:#0c9478; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.cancelbtn {
+  background-color: #ff9800; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.editbtn,
+.deletebtn {
+  background-color: #04bdbd; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.editbtn:hover {
+  background-color:#ff9800; 
+}
+
+.deletebtn:hover {
+  background-color: #ff3333; 
+}
+
+.updatebtn:hover {
+  background-color: #04bdbd; 
+}
+
+.cancelbtn:hover {
+  background-color: #e95a17; 
+}

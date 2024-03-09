@@ -1,3 +1,4 @@
+import '../assets/css/TaskList.css';
 const TaskList = ({
   tasks,
   filter,
@@ -35,7 +36,7 @@ const TaskList = ({
             />
 
             {task.editMode ? (
-              <div>
+              <>
                 <input 
                   type="text"
                   value={task.editedText || ""}
@@ -46,11 +47,11 @@ const TaskList = ({
                 />
               <div className="btngroup">
               <button className="updatebtn" onClick={() => handleEditTask(index, task.editedText)}>
-                  save
+                  Save
                 </button>
-                <button className="cancelbtn" onClick={() => exitEditMode(index)}>cancel</button>
+                <button className="cancelbtn" onClick={() => exitEditMode(index)}>Cancel</button>
               </div>
-              </div>
+              </>
 
             ) : (
               <>
@@ -59,7 +60,7 @@ const TaskList = ({
                 <button className="editbtn" onClick={() => enterEditMode(index, task.text)}>
                   Edit
                 </button>
-                <button className="deletebtn" onClick={() => handleDeleteTask(index)}>X</button>
+                <button className="deletebtn" onClick={() => handleDeleteTask(index)}>Delete</button>
                 </div>
                 
               </>

@@ -1,0 +1,31 @@
+.taskform {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+label {
+  display: none; 
+}
+
+.form-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #4caf50; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; 
+}

@@ -1,11 +1,8 @@
-*{
-  padding:0;
-  margin:0;
-  box-sizing: border-box;
-}
-
 body{
   background-color: rgb(28, 40, 53);
+  color:white;
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
@@ -16,147 +13,12 @@ h1{
   font-size: 35px;
 }
 
-.completed {
-  text-decoration: line-through;
-  color: #888;
+.header-flex{
+  display: flex;
+  justify-content: space-between;
 }
 
 .app{
-display: flex;
-justify-content: center;
-padding:80px;
-
+  max-width: 90%;
+  margin: 0 auto;
 }
-
-.filterbar{
-  margin-bottom: 20px;
- text-align: start;
- color:white;
-}
-
-.taskform{
-  margin-bottom: 20px;
-  color: white;
-  display: flex;
-}
-
-.taskform input{
-  padding: 6px 10px;
-  margin-left: 10px;
-  width: 208px;
-}
-
-.checkbox:checked{
-  background-color: rgb(218, 157, 2);
-}
-
-.tasklist li{
-  background-color: rgba(186, 189, 199, 0.524);
-  margin-bottom: 10px;
-  border-radius: 25px;
-  padding: 10px 5px;
-  display: flex;
-  position: relative;
-  color:white;
-}
-
-.tasklist input{
-  margin-right: 10px;
-}
-
-.btngroup{
-  position: absolute;
-  right:0;
-  top:50%;
-  transform: translate(-10px, -50%);
-  
-}
-
-#addbtn{
-  background-color: rgb(218, 157, 2);
-  border: none;
-  padding:0px 8px;
-  margin-left: 20px;
-  border-radius: 5px;
-  font-size: 30px;
-  color: rgb(28, 40, 53);
-  cursor: 'pointer';
-  transition: .3s;
-}
-
-#addbtn:hover{
-  background-color:  rgb(254, 218, 128);
-}
-
-.editbtn{
-  background-color: rgb(9, 205, 169);
-  border: none;
-  padding:5px 5px;
-  margin-left: 5px;
-  border-radius: 5px;
-  font-size: 15px;
-  color: rgb(28, 40, 53);
-  cursor: 'pointer';
-  transition: .3s;
-}
-
-.editbtn:hover{
-  background-color: rgb(120, 255, 230);
-}
-
-.deletebtn{
-  background-color: rgb(208, 53, 10);
-  border: none;
-  padding:5px 12px;
-  margin-left: 5px;
-  border-radius: 5px;
-  font-size: 15px;
-  color: rgb(28, 40, 53);
-  cursor: 'pointer';
-  transition: .3s;
-}
-
-.deletebtn:hover{
-  background-color:rgb(251, 138, 107);
-}
-
-.updatebtn{
-  background-color:  rgb(208, 53, 10);
-  border: none;
-  padding:5px 12px;
-  margin-left: 20px;
-  border-radius: 5px;
-  font-size: 13px;
-  color: rgb(28, 40, 53);
-  cursor: 'pointer';
-  transition: .3s;
-}
-
-.deletebtn:hover{
-  background-color:rgb(251, 138, 107);
-}
-
-
-.cancelbtn{
-  background-color: rgb(9, 205, 169);
-  border: none;
-  padding:5px 12px;
-  margin-left: 5px;
-  border-radius: 5px;
-  font-size: 13px;
-  color: rgb(28, 40, 53);
-  cursor: 'pointer';
-  transition: .3s;
-}
-
-.cancelbtn:hover{
-  background-color: rgb(120, 255, 230);
-}
-
-.textInput{
-  width: 85%;
-}
-
-
-
-

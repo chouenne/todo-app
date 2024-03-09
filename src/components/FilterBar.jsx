@@ -1,7 +1,8 @@
+import '../assets/css/FilterBar.css';
 export default function FilterBar({filter, setFilter}) {
   return (
     <div className="filterbar">
-      <label htmlFor="filter">Filter your task here: </label>
+      <label htmlFor="filter"></label>
       <select
         id="filter"
         value={filter}

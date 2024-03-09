@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import '../assets/css/TaskForm.css';
+
 
 export default function TaskForm({ addTask }) {
   const [task, setTask] = useState('');
@@ -20,6 +22,7 @@ export default function TaskForm({ addTask }) {
         value={task}
         placeholder="Enter your new task here"
         onChange={(e) => setTask(e.target.value)}
+        className="form-input"
       />
       <button type="submit" id="addbtn">+</button>
     </form>

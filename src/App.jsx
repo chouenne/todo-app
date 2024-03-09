@@ -74,8 +74,9 @@ function App() {
   return (
     <div className="app">
       <div>
-      <h1>Organize your todo</h1>
-      <FilterBar filter={filter} setFilter={setFilter} />
+        <div className="header-flex"> <h1>Organize your work</h1>
+      <FilterBar filter={filter} setFilter={setFilter} /></div>
+     
       <TaskForm addTask={addTask} />
       <TaskList
         tasks={tasks}

@@ -1,0 +1,17 @@
+.filterbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
